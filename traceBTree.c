@@ -75,6 +75,21 @@ TreeNode* TraceScan(TreeNode*node){
 		return node;	
 	}
 }
+
+void surf(Tree*tree){
+	//整棵树的最左子树
+	TreeNode* tmp = FirstLeftNode(tree->root);
+	while(tmp->right !=NULL){
+		printf("surf:%d\n",tmp->data);
+		if(tmp->rightTrace == 1){
+			tmp = tmp->right;	
+		}else{
+			tmp = FirstLeftNode(tmp->right);
+		}
+	}
+	
+}
+
 int main(){
 	ElemType data ;
 	Tree* tree = (Tree*) malloc(sizeof(Tree));

@@ -21,3 +21,5 @@ void addTreeNode(Tree*tree,ElemType data);
 TreeNode* TraceScan(TreeNode*tree);
 
 TreeNode* FirstLeftNode(TreeNode*node);
+
+void surf(Tree*tree);
