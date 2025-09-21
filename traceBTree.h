@@ -22,4 +22,5 @@ TreeNode* TraceScan(TreeNode*tree);
 
 TreeNode* FirstLeftNode(TreeNode*node);
 
+//整体遍历
 void surf(Tree*tree);
