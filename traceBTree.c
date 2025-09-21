@@ -77,7 +77,7 @@ TreeNode* TraceScan(TreeNode*node){
 }
 
 void surf(Tree*tree){
-	//整棵树的最左子树
+	//整棵树的最左子树,先找到左子树再操作
 	TreeNode* tmp = FirstLeftNode(tree->root);
 	while(tmp->right !=NULL){
 		printf("surf:%d\n",tmp->data);
