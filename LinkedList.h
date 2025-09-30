@@ -13,6 +13,8 @@ typedef struct List{
 	ListNode* tail;
 }LinkedList;
 
+typedef void (*fun_callback)(LinkedList*queue);
+
 void initLinkedList(LinkedList*queue);
 
 void addToLinkedList(LinkedList*queue,QueueElem data);
