@@ -17,7 +17,7 @@ void addToLinkedList(LinkedList*queue,QueueElem data){
 		if(tmp->next->data>=data ){
 			node->next = tmp->next;
 			tmp->next = node;
-			printf("elem %c added\n",data);
+			printf("elem %d added\n",data);
 			break;
 		}		
 		else{
@@ -55,7 +55,7 @@ bool removeFromLinkedList(LinkedList*queue,QueueElem data){
 void printLinkedList(LinkedList*queue){
 	ListNode * tmp = queue->head;
 	while(tmp->next!=NULL){
-		printf("output:%c\n",tmp->next->data);
+		printf("output:%d\n",tmp->next->data);
 		tmp = tmp->next;
 	}
 }

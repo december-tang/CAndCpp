@@ -5,4 +5,4 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define QueueElem char
+#define QueueElem int

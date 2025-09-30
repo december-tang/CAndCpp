@@ -30,11 +30,16 @@ void bfs(MetricsGraph*graph,int vertex,int visited[vertexSize]){
 }
 
 void sortList(LinkedList*queue){
-	printf("sorted");	
+	printf("\n");
+	printLinkedList(queue);	
 }
 
 void createMinTreeWithPrime(MetricsGraph*graph,fun_callback sortList){
 	LinkedList*list = (LinkedList*)malloc(sizeof(LinkedList));
+	initLinkedList(list);
+	for(int i = 0;i<vertexSize;i++){
+		addToLinkedList(list,i);
+	}
 	sortList(list);
 }
 
