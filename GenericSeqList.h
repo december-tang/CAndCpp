@@ -9,6 +9,7 @@ typedef struct List{
 
 	int size;//元素数量
 	int head;
+	int capacity;
 	int elem_size;
 	void* arr;
 	void (*free_fun)(void*);
